@@ -1,0 +1,217 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+:root{
+  --bg:#3b0764; /* fundo mais roxo */
+  --card:#5c27a0;
+  --primary:#8b5cf6;
+  --accent:#f472b6;
+  --text:#f5f5f5;
+  --white:#ffffff;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:0.4s;
+}
+
+.nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(59,7,100,0.95);
+  backdrop-filter:blur(10px);
+  border-bottom:2px solid var(--accent);
+  z-index:100;
+}
+
+.nav-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.nav-content a{
+  margin-left:15px;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-content a:hover{
+  color:var(--accent);
+}
+
+.logo{
+  font-size:1.6rem;
+  font-weight:600;
+  color:var(--accent);
+}
+
+/* HERO */
+.hero{
+  height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  color:white;
+  padding:20px;
+  border-radius:0 0 50% 50% / 10% 10% 10% 10%;
+  box-shadow:0 5px 30px rgba(0,0,0,0.3);
+}
+
+.hero h2{
+  font-size:3rem;
+  margin-bottom:15px;
+  text-shadow:0 0 20px rgba(255,255,255,0.4);
+}
+
+.hero p{
+  font-size:1.3rem;
+  opacity:0.9;
+  margin-bottom:25px;
+}
+
+.hero button{
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:var(--primary);
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 0 20px rgba(139,92,246,0.5);
+}
+
+.hero button:hover{
+  transform:scale(1.05);
+  background:var(--accent);
+  color:white;
+  box-shadow:0 0 25px var(--accent);
+}
+
+/* SEÇÕES INFORMATIVAS */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.about, .benefits, .applications{
+  margin-top:40px;
+  background:linear-gradient(135deg,var(--primary),var(--card));
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.about h2, .features h2, .benefits h2, .applications h2{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.feature{
+  background:var(--card);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  transition:0.4s;
+  border:2px solid var(--accent);
+  cursor:pointer;
+}
+
+.feature:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 0 20px var(--accent),0 0 30px var(--primary);
+}
+
+.btn-link{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 15px;
+  border-radius:20px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.btn-link:hover{
+  background:var(--primary);
+  box-shadow:0 0 15px var(--primary);
+}
+
+/* BENEFÍCIOS */
+.benefits ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  padding:0;
+}
+
+.benefits li{
+  background:var(--bg);
+  color:var(--primary);
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+  font-weight:500;
+  transition:0.3s;
+}
+
+.benefits li:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px var(--accent);
+}
+
+/* APLICAÇÕES */
+.apps-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.app{
+  background:var(--bg);
+  color:var(--accent);
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  font-weight:600;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.app:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px var(--primary);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  background:var(--primary);
+  color:white;
+  font-weight:500;
+  box-shadow:0 -5px 20px rgba(0,0,0,0.2);
+}
