@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionSafe Interlock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-content">
+    <h1 class="logo">VisionSafe Interlock 👓 </h1>
+    <nav>
+      <a href="indexx.html">Home</a>
+      <a href="sensor.html">Sensor</a>
+      <a href="comunicacao.html">Comunicação</a>
+      <a href="interbloqueio.html">Interbloqueio</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h2>Proteção Inteligente em Tempo Real</h2>
+    <p>Óculos inteligentes que permitem operar máquinas apenas com segurança ativa.</p>
+    <button onclick="scrollDown()">Explorar Sistema</button>
+  </div>
+</section>
+
+<section class="about container">
+  <h2>Como Funciona</h2>
+  <p>Os óculos inteligentes detectam automaticamente se estão corretamente posicionados no operador, enviando sinais seguros para o equipamento industrial. Assim, a máquina só funciona quando o EPI está corretamente colocado.</p>
+</section>
+
+<section class="features container">
+  <h2>Componentes Principais</h2>
+  <div class="features-grid">
+    <div class="feature" onclick="animateCard(this)">
+      <h3>🧠 Sensor Inteligente</h3>
+      <p>Deteta presença do usuário em tempo real, garantindo operação segura.</p>
+      <a href="sensor.html" class="btn-link">Saber mais</a>
+    </div>
+    <div class="feature" onclick="animateCard(this)">
+      <h3>📡 Comunicação</h3>
+      <p>Envia sinais confiáveis do sensor para a máquina industrial.</p>
+      <a href="comunicacao.html" class="btn-link">Saber mais</a>
+    </div>
+    <div class="feature" onclick="animateCard(this)">
+      <h3>⚙️ Interbloqueio</h3>
+      <p>O sistema impede operação sem a proteção ativa do EPI.</p>
+      <a href="interbloqueio.html" class="btn-link">Saber mais</a>
+    </div>
+  </div>
+</section>
+
+<section class="benefits container">
+  <h2>Benefícios</h2>
+  <ul>
+    <li>Segurança máxima do operador</li>
+    <li>Redução de acidentes e custos</li>
+    <li>Automação confiável e eficiente</li>
+    <li>Compatível com diversas máquinas industriais</li>
+  </ul>
+</section>
+
+<section class="applications container">
+  <h2>Aplicações Industriais</h2>
+  <div class="apps-grid">
+    <div class="app">Fabricação de peças metálicas</div>
+    <div class="app">Corte e rebarbagem de aço</div>
+    <div class="app">Operação de tornos e fresadoras</div>
+    <div class="app">Linhas de montagem automatizadas</div>
+  </div>
+</section>
+
+<footer>
+  <p>VisionSafe Interlock © 2026</p>
+</footer>
+
+<script>
+function scrollDown(){
+  window.scrollTo({top:600, behavior:'smooth'});
+}
+function animateCard(card){
+  card.classList.add('active');
+  setTimeout(()=>{card.classList.remove('active')},800);
+}
+</script>
+</body>
+</html>
