@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISIONSAFE INTERLOCK - Interbloqueio</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-content">
+    <h1 class="logo">VISIONSAFE INTERLOCK</h1>
+    <nav>
+      <a href="indexx.html">Home</a>
+      <a href="sensor.html">Sensor</a>
+      <a href="comunicacao.html">Comunicação</a>
+      <a href="interbloqueio.html">Interbloqueio</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-small">
+  <div class="container hero-content">
+    <h2>Interbloqueio Dinâmico</h2>
+    <p>O sistema garante que a máquina só funciona com óculos corretamente colocados e desliga automaticamente se retirados.</p>
+  </div>
+</section>
+
+<section class="features container">
+  <div class="feature" onclick="toggleInfo(this)">
+    <h3>Fluxo de Interbloqueio</h3>
+    <ol class="info">
+      <p>Sensor detecta presença</p>
+      <p>Envia sinal ao equipamento</p>
+      <p>Validação pelo microcontrolador</p>
+      <p>Relé energiza a máquina somente com sinal ativo</p>
+    </ol>
+  </div>
+
+  <div class="feature" onclick="toggleInfo(this)">
+    <h3>Benefícios</h3>
+    <ul class="info">
+      <p>Segurança máxima</p>
+      <p>Redução de acidentes</p>
+      <p>Automação confiável</p>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>VisionSafe Interlock - Interbloqueio</p>
+</footer>
+
+<script>
+function toggleInfo(card){
+  card.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
